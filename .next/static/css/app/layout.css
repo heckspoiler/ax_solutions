@@ -1,0 +1,224 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/Header/Navbar.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.Navbar_Header__ECvjH {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: all;
+    z-index: 100;
+    padding-right: 2rem;
+}
+
+.Navbar_Header__ECvjH .Navbar_Container__KtzRF {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    height: 2rem;
+    padding: 0.2rem;
+    overflow: hidden;
+}
+
+.Navbar_Header__ECvjH ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Navbar_Header__ECvjH li {
+    text-transform: uppercase;
+    list-style-type: none;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    font-size: 1.2rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 2rem;
+}
+
+/* .Header li:hover {
+    color: var(--white-new)
+} */
+
+.Navbar_Header__ECvjH li::before {
+    background-color: var(--accent-green);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    transform: translateX(-110%);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.Navbar_Header__ECvjH li:hover::before {
+
+    transform: translateX(0);
+
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal Bold";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Bold.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal Light";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Light.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hatton Bold";
+  src: url("/fonts/Hatton/PPHatton-Bold.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPHatton-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hatton Light";
+  src: url("/fonts/Hatton/PPHatton-Light.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPHatton-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display Variable";
+  src: url("/fonts/ClashDisplay/ClashDisplay-Variable.woff2") format("woff2"),
+    url("/fonts/ClashDisplay/ClashDisplay-Variable.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+
+  /* fonts */
+  --main-font: "Clash Display Variable";
+  --bold-font: "Clash Display Variable";
+  --light-font: "Neue Montreal Light";
+  --regular-font: "Clash Display Variable";
+  --accent-font-bold: "Hatton Bold";
+  --accent-font-light: "Hatton Light";
+
+
+  /* colors */
+  --black-new: #1C1C1C;
+  --white-new: rgb(238, 238, 238);
+  --accent-orange: #EE642A;
+  --accent-green: #a5fa4a;
+}
+
+p,
+input,
+textarea {
+  font-family: var(--light-font);
+  line-height: 1.5;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--regular-font);
+}
+
+
+*::selection {
+  background-color: var(--accent-yellow);
+  color: var(--black-new)
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  pointer-events: none;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  /* background-color: var(--white-new); */
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+  background-image:
+    linear-gradient(to right, var(--black-new) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--black-new) 1px, transparent 1px);
+  background-size: 10vw 10vw;
+  opacity: 0.1;
+
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-variation-settings: "wght" 600;
+  font-family: var(--regular-font)
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
