@@ -71,22 +71,27 @@ export default function Model() {
         <MeshTransmissionMaterial
           transmissionSampler={false}
           backside={true}
-          backsideThickness={0.5}
-          samples={16}
+          samples={4}
+          resolution={256}
           thickness={0.5}
-          chromaticAberration={0.1}
-          anisotropy={0.8}
-          distortion={0.9}
-          distortionScale={0.9}
-          temporalDistortion={0.2}
+          chromaticAberration={0.9}
+          anisotropy={0.3}
+          distortion={0.2}
+          distortionScale={0.4}
+          temporalDistortion={0.1}
           iridescence={0.1}
-          iridescenceIOR={0.5}
-          iridescenceThicknessRange={[0, 1400]}
-          clearcoat={1}
-          attenuationDistance={0.9}
-          attenuationColor="#ffffff"
-          color="white"
-          opacity={0}
+          iridescenceIOR={0.2}
+          iridescenceThicknessRange={[100, 700]}
+          clearcoat={0.3}
+          attenuationDistance={0.5}
+          attenuationColor="#89CFF0"
+          color="#000000"
+          opacity={0.1}
+          ior={1.1}
+          reflectivity={0.9}
+          transmission={0.95}
+          roughness={0.1}
+          metalness={0.9}
         />
       </mesh>
 
@@ -98,6 +103,7 @@ export default function Model() {
         enableZoom={false}
       />
       <Environment preset="city" />
+
       <ambientLight intensity={0.8} />
       <directionalLight position={[5, 5, 5]} intensity={1} />
     </group>
