@@ -1,0 +1,14 @@
+.Container {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    transform: translateY(110vh);
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+.Container svg {
+    height: 2rem;
+    width: 2rem;
+}

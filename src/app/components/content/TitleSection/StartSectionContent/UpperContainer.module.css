@@ -1,0 +1,64 @@
+.UpperContainerSection {
+    position: relative;
+    display: flex;
+}
+
+.Content {
+    overflow: hidden;
+}
+
+.Content h1 {
+    font-size: 4rem;
+    pointer-events: all;
+    overflow: hidden;
+    z-index: 10;
+    color: var(--black-new);
+    text-shadow: 2px 2px 1px var(--white-new);
+}
+
+.Arrow {
+    transform: rotate(45deg);
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.RightContainer {
+    height: fit-content;
+    align-self: flex-end;
+    overflow: hidden;
+}
+
+.BlackBGContainer {
+    background-color: var(--black-new);
+    overflow: hidden;
+    box-shadow: 10px 1px 1px black;
+}
+
+.BlackBG {
+    color: var(--white-new);
+    font-size: 4rem;
+    padding: 0em 0.2em;
+    text-shadow: 2px 2px 1px black;
+}
+
+.ArrowContainer {
+    display: flex;
+}
+
+.Content:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

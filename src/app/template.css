@@ -1,0 +1,10 @@
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

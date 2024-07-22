@@ -1,0 +1,35 @@
+{
+  "name": "jungvonmatt",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "preinstall": "node scripts/check-gsap-auth.js",
+    "install-gsap": "npm install @gsap/react"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@react-three/drei": "^9.108.3",
+    "@react-three/fiber": "^8.16.8",
+    "@studio-freight/react-lenis": "^0.0.47",
+    "dotenv": "^16.4.5",
+    "gsap": "npm:@gsap/shockingly@^3.12.5",
+    "lenis": "^1.1.6",
+    "leva": "^0.9.35",
+    "next": "14.2.4",
+    "nodemailer": "^6.9.14",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-intersection-observer": "^9.13.0",
+    "three": "^0.166.1",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.10",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4"
+  }
+}

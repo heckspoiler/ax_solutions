@@ -1,0 +1,25 @@
+.Main {
+    transform: translateY(50vh);
+    height: fit-content;
+    position: relative;
+    min-height: 150vh;
+    /* border: 1px solid black; */
+}
+
+
+
+.Main h1 {
+    color: var(--black-new)
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

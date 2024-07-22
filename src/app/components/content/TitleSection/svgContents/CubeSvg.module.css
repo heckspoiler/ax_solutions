@@ -1,0 +1,13 @@
+.Container {
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    z-index: 1;
+    top: 100vh;
+    left: 50rem;
+}
+
+.Container svg {
+    height: 2rem;
+    width: 2rem;
+}

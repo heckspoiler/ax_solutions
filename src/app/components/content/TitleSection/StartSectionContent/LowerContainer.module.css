@@ -1,0 +1,41 @@
+.LowerContainer {
+    padding: 4rem 3rem 3rem 3rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 30vh 3rem 0 auto;
+}
+
+.LowerContent {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    height: fit-content;
+    width: 40rem;
+}
+
+.LowerContent h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--black-new);
+}
+
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

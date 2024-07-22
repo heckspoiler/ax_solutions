@@ -1,0 +1,33 @@
+.Main {
+    margin-top: 100vh;
+    padding: 4rem 0;
+}
+
+.ContentContainer {
+    height: fit-content;
+    width: fit-content;
+    padding: 4rem;
+    border: 1px solid var(--black-new);
+    background-color: white;
+    box-shadow: 5px 5px 1px var(--black-new);
+}
+
+.Main h1 {
+    color: var(--black-new);
+    overflow: hidden;
+}
+
+.TextContainer {
+    overflow: hidden;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

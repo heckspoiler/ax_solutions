@@ -1,0 +1,40 @@
+.TestContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.Test {
+    height: fit-content;
+    width: fit-content;
+    pointer-events: all;
+    overflow: hidden;
+    position: absolute;
+    color: var(--black-new);
+    padding: 1rem;
+    border: 1px solid var(--black-new);
+    background-color: white;
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 1px var(--black-new);
+}
+
+
+.Test:active {
+    background-color: var(--accent-green);
+}
+
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

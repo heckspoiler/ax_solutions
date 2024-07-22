@@ -1,0 +1,45 @@
+.Content {
+    position: absolute;
+    top: 0;
+    padding: 2rem;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.Content h1 {
+    color: var(--black-new)
+}
+
+.FirstContentContainer {
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.FirstContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ScrollTrigger {
+    margin-top: 6rem;
+    height: 10em;
+    width: 10em;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {}
+
+
+
+/* Mobile */
+@media (max-width: 768px) {}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 768px) and (max-width: 1120px) {}

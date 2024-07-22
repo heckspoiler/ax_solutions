@@ -1,0 +1,123 @@
+.Main {
+    min-height: 100vh;
+    width: 100%;
+    padding: 3rem;
+    position: relative;
+
+}
+
+.Instructions {
+    height: 5rem;
+    width: 15rem;
+    position: absolute;
+    right: -15rem;
+    top: 5rem;
+    pointer-events: none;
+}
+
+.Instructions h3 {
+    text-transform: uppercase;
+    font-variation-settings: "wght" 500;
+}
+
+.ContentContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.EmailContainer {
+    padding: 3rem;
+    pointer-events: all;
+}
+
+
+.Email {
+    border: 1px solid var(--black-new);
+    background-color: white;
+    box-shadow: 5px 5px 1px var(--black-new);
+    height: fit-content;
+    width: 30rem;
+    padding: 1.5rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+.UpperContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.UpperContent h3 {
+    width: fit-content;
+    padding: 0.25em;
+    border-bottom: 1px solid var(--black-new);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    width: fit-content;
+    font-variation-settings: "wght" 600;
+    background-color: var(--accent-green);
+}
+
+.LowerContent {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Email input {
+    padding: 0.3rem 0.5rem;
+    border: 1px solid black;
+    width: 80%;
+}
+
+
+.Email textarea {
+    border: 1px solid black;
+    height: 10rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.Email textarea:focus,
+.Email input:focus {
+    outline: 1px solid var(--accent-green)
+}
+
+
+
+.SVGContainer {
+    width: 50%;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    height: fit-content;
+    width: fit-content;
+    height: 100%;
+    /* pointer-events: all; */
+}
+
+.Instructions {
+    background-color: white;
+    border: 1px solid var(--black-new);
+    box-shadow: 4px 4px 1px var(--black-new);
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Instructions h3 {
+    text-align: center;
+}
+
+
+.EmailContainer:hover .Instructions {
+    visibility: visible;
+}

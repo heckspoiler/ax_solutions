@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal Bold";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Bold.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal Light";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Light.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPNeueMontreal-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hatton Bold";
+  src: url("/fonts/Hatton/PPHatton-Bold.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPHatton-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hatton Light";
+  src: url("/fonts/Hatton/PPHatton-Light.woff2") format("woff2"),
+    url("/fonts/Neue_Montreal/PPHatton-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display Variable";
+  src: url("/fonts/ClashDisplay/ClashDisplay-Variable.woff2") format("woff2"),
+    url("/fonts/ClashDisplay/ClashDisplay-Variable.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+
+  /* fonts */
+  --main-font: "Clash Display Variable";
+  --bold-font: "Clash Display Variable";
+  --light-font: "Neue Montreal Light";
+  --regular-font: "Clash Display Variable";
+  --accent-font-bold: "Hatton Bold";
+  --accent-font-light: "Hatton Light";
+
+
+  /* colors */
+  --black-new: #1C1C1C;
+  --white-new: rgb(238, 238, 238);
+  --accent-orange: #EE642A;
+  --accent-green: #a5fa4a;
+}
+
+p,
+input,
+textarea {
+  font-family: var(--light-font);
+  line-height: 1.5;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--regular-font);
+}
+
+
+*::selection {
+  background-color: var(--accent-yellow);
+  color: var(--black-new)
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  pointer-events: none;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  /* background-color: var(--white-new); */
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -100;
+  background-image:
+    linear-gradient(to right, var(--black-new) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--black-new) 1px, transparent 1px);
+  background-size: 10vw 10vw;
+  opacity: 0.1;
+
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-variation-settings: "wght" 600;
+  font-family: var(--regular-font)
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
