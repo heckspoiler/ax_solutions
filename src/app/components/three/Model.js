@@ -17,7 +17,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function Model() {
   const meshRef = useRef();
-  const { nodes } = useGLTF('/assets/ax_logo.glb');
+  const { nodes } = useGLTF('/assets/ax_logo_3d.glb');
 
   console.log(nodes);
   const timeRef = useRef(0);
