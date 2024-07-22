@@ -1,5 +1,5 @@
 {
-  "name": "axsolutions",
+  "name": "jungvonmatt",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,8 +15,8 @@
     "@react-three/drei": "^9.108.3",
     "@react-three/fiber": "^8.16.8",
     "@studio-freight/react-lenis": "^0.0.47",
-    "gsap": "npm:@gsap/shockingly@^3.12.5",
     "dotenv": "^16.4.5",
+    "gsap": "npm:@gsap/shockingly@^3.12.5",
     "lenis": "^1.1.6",
     "leva": "^0.9.35",
     "next": "14.2.4",
