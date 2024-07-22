@@ -11,11 +11,12 @@
     "install-gsap": "npm install @gsap/react"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
     "@react-three/drei": "^9.108.3",
     "@react-three/fiber": "^8.16.8",
     "@studio-freight/react-lenis": "^0.0.47",
+    "gsap": "npm:@gsap/shockingly@^3.12.5",
     "dotenv": "^16.4.5",
-    "gsap": "^3.12.5",
     "lenis": "^1.1.6",
     "leva": "^0.9.35",
     "next": "14.2.4",
